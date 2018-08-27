@@ -107,6 +107,9 @@ signing_key.priv
 signing_key.x509
 x509.genkey
 
+#build sctipt
+custom.sh
+
 # Kconfig presets
 all.config
 
