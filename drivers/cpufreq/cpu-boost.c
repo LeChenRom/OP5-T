@@ -35,8 +35,8 @@ struct cpu_sync {
 
 static DEFINE_PER_CPU(struct cpu_sync, sync_info);
 
-static bool input_boost_enabled;
-static unsigned int input_boost_ms;
+static bool input_boost_enabled = 1;
+static unsigned int input_boost_ms = 100;
 module_param(input_boost_ms, uint, 0644);
 
 static struct delayed_work input_boost_rem;
