@@ -26,10 +26,8 @@ unsigned long boosted_cpu_util(int cpu);
 #define cpufreq_driver_fast_switch(x, y) 0
 #define cpufreq_enable_fast_switch(x)
 #define cpufreq_disable_fast_switch(x)
-#define LATENCY_MULTIPLIER			(1000)
-#define PWRGOV_KTHREAD_PRIORITY	25
-#define UP_RATE_LIMIT_US 2000
-#define DOWN_RATE_LIMIT_US 4000
+#define LATENCY_MULTIPLIER		(1000)
+#define PWRGOV_KTHREAD_PRIORITY	50
 
 struct pwrgov_tunables {
     struct gov_attr_set attr_set;
